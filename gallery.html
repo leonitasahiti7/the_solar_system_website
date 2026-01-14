@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery - Solar system explorer </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body id="LS">
+    <nav class="LS-navbar navbar navbar-expand-lg navbar-dark sticky-top" data-testid="navbar-main">
+        <div class="container-fluid">
+            <a class="navbar-brand LS-brand" href="../index.html" data-testid="brand-logo">SOLAR<span class="text-white">SYSTEM</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-testid="navbar-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link LS-nav-link" href="../index.html" data-testid="nav-home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link LS-nav-link" href="about.html" data-testid="nav-about">About</a></li>
+                    <li class="nav-item"><a class="nav-link LS-nav-link" href="services.html" data-testid="nav-services">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link LS-nav-link dropdown-toggle active" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown" data-testid="nav-explore">Explore</a>
+                        <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                            <li><a class="dropdown-item active" href="gallery.html" data-testid="nav-gallery">Gallery</a></li>
+                            <li><a class="dropdown-item" href="blog.html" data-testid="nav-blog">News</a></li>
+                            <li><a class="dropdown-item" href="team.html" data-testid="nav-team">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link LS-nav-link" href="faq.html" data-testid="nav-faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link LS-nav-link" href="contact.html" data-testid="nav-contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-20">
+        <div class="container">
+            <h1 class="LS-section-title display-4 mb-5" data-testid="page-title">PLANETARY DATABASE</h1>
+            
+            <div class="row">
+                <!-- Sun Card -->
+                <div class="col-lg-4 col-md-6 mb-5" data-testid="planet-card-sun">
+                    <div class="LS-card h-100 d-flex flex-column cursor-pointer">
+                        <div style="height: 250px; overflow: hidden;" class="position-relative border-bottom border-secondary">
+                            <img src="images/sun.jpg" alt="Sun" class="w-100 h-100" style="object-fit: cover;" data-testid="planet-img-sun">
+                            <div class="position-absolute top-3 end-3 bg-dark bg-opacity-70 px-3 py-1 rounded-pill border border-info">
+                                <span class="text-cyan text-uppercase fw-bold text-sm" data-testid="planet-type-sun">Star</span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow-1 d-flex flex-column">
+                            <h4 class="font-orbitron fs-4 text-white mb-2" data-testid="planet-name-sun">The Sun</h4>
+                            <p class="text-gray-400 mb-4 flex-grow-1" data-testid="planet-desc-sun">The star at the center of our Solar System.</p>
+                            <button type="button" class="LS-btn-glow btn-sm w-100" data-bs-toggle="modal" data-bs-target="#planetModal" data-planet="sun" data-testid="planet-btn-sun">Access Data</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mercury Card -->
+                <div class="col-lg-4 col-md-6 mb-5" data-testid="planet-card-mercury">
+                    <div class="LS-card h-100 d-flex flex-column cursor-pointer">
+                        <div style="height: 250px; overflow: hidden;" class="position-relative border-bottom border-secondary">
+                            <img src="images/mercury.jpg"Mercury" class="w-100 h-100" style="object-fit: cover;" data-testid="planet-img-mercury">
+                            <div class="position-absolute top-3 end-3 bg-dark bg-opacity-70 px-3 py-1 rounded-pill border border-info">
+                                <span class="text-cyan text-uppercase fw-bold text-sm" data-testid="planet-type-mercury">Planet</span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow-1 d-flex flex-column">
+                            <h4 class="font-orbitron fs-4 text-white mb-2" data-testid="planet-name-mercury">Mercury</h4>
+                            <p class="text-gray-400 mb-4 flex-grow-1" data-testid="planet-desc-mercury">The smallest planet and closest to the Sun.</p>
+                            <button type="button" class="LS-btn-glow btn-sm w-100" data-bs-toggle="modal" data-bs-target="#planetModal" data-planet="mercury" data-testid="planet-btn-mercury">Access Data</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Venus Card -->
+                <div class="col-lg-4 col-md-6 mb-5" data-testid="planet-card-venus">
+                    <div class="LS-card h-100 d-flex flex-column cursor-pointer">
+                        <div style="height: 250px; overflow: hidden;" class="position-relative border-bottom border-secondary">
+                            <img src="images/venus.jpg" alt="Venus" class="w-100 h-100" style="object-fit: cover;" data-testid="planet-img-venus">
+                            <div class="position-absolute top-3 end-3 bg-dark bg-opacity-70 px-3 py-1 rounded-pill border border-info">
+                                <span class="text-cyan text-uppercase fw-bold text-sm" data-testid="planet-type-venus">Planet</span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow-1 d-flex flex-column">
+                            <h4 class="font-orbitron fs-4 text-white mb-2" data-testid="planet-name-venus">Venus</h4>
+                            <p class="text-gray-400 mb-4 flex-grow-1" data-testid="planet-desc-venus">The hottest planet in our Solar System.</p>
+                            <button type="button" class="LS-btn-glow btn-sm w-100" data-bs-toggle="modal" data-bs-target="#planetModal" data-planet="venus" data-testid="planet-btn-venus">Access Data</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Earth Card -->
+                <div class="col-lg-4 col-md-6 mb-5" data-testid="planet-card-earth">
+                    <div class="LS-card h-100 d-flex flex-column cursor-pointer">
+                        <div style="height: 250px; overflow: hidden;" class="position-relative border-bottom border-secondary">
+                            <img src="images/earth.jpg"Earth" class="w-100 h-100" style="object-fit: cover;" data-testid="planet-img-earth">
+                            <div class="position-absolute top-3 end-3 bg-dark bg-opacity-70 px-3 py-1 rounded-pill border border-info">
+                                <span class="text-cyan text-uppercase fw-bold text-sm" data-testid="planet-type-earth">Planet</span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow-1 d-flex flex-column">
+                            <h4 class="font-orbitron fs-4 text-white mb-2" data-testid="planet-name-earth">Earth</h4>
+                            <p class="text-gray-400 mb-4 flex-grow-1" data-testid="planet-desc-earth">Our home planet, the third from the Sun.</p>
+                            <button type="button" class="LS-btn-glow btn-sm w-100" data-bs-toggle="modal" data-bs-target="#planetModal" data-planet="earth" data-testid="planet-btn-earth">Access Data</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mars Card -->
+                <div class="col-lg-4 col-md-6 mb-5" data-testid="planet-card-mars">
+                    <div class="LS-card h-100 d-flex flex-column cursor-pointer">
+                        <div style="height: 250px; overflow: hidden;" class="position-relative border-bottom border-secondary">
+                            <img src="images/mars.jpg"Mars" class="w-100 h-100" style="object-fit: cover;" data-testid="planet-img-mars">
+                            <div class="position-absolute top-3 end-3 bg-dark bg-opacity-70 px-3 py-1 rounded-pill border border-info">
+                                <span class="text-cyan text-uppercase fw-bold text-sm" data-testid="planet-type-mars">Planet</span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow-1 d-flex flex-column">
+                            <h4 class="font-orbitron fs-4 text-white mb-2" data-testid="planet-name-mars">Mars</h4>
+                            <p class="text-gray-400 mb-4 flex-grow-1" data-testid="planet-desc-mars">The fourth planet known as the Red Planet.</p>
+                            <button type="button" class="LS-btn-glow btn-sm w-100" data-bs-toggle="modal" data-bs-target="#planetModal" data-planet="mars" data-testid="planet-btn-mars">Access Data</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jupiter Card -->
+                <div class="col-lg-4 col-md-6 mb-5" data-testid="planet-card-jupiter">
+                    <div class="LS-card h-100 d-flex flex-column cursor-pointer">
+                        <div style="height: 250px; overflow: hidden;" class="position-relative border-bottom border-secondary">
+                            <img src="images/jupiter.jpg"Jupiter" class="w-100 h-100" style="object-fit: cover;" data-testid="planet-img-jupiter">
+                            <div class="position-absolute top-3 end-3 bg-dark bg-opacity-70 px-3 py-1 rounded-pill border border-info">
+                                <span class="text-cyan text-uppercase fw-bold text-sm" data-testid="planet-type-jupiter">Planet</span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow-1 d-flex flex-column">
+                            <h4 class="font-orbitron fs-4 text-white mb-2" data-testid="planet-name-jupiter">Jupiter</h4>
+                            <p class="text-gray-400 mb-4 flex-grow-1" data-testid="planet-desc-jupiter">The largest planet in our Solar System.</p>
+                            <button type="button" class="LS-btn-glow btn-sm w-100" data-bs-toggle="modal" data-bs-target="#planetModal" data-planet="jupiter" data-testid="planet-btn-jupiter">Access Data</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saturn Card -->
+                <div class="col-lg-4 col-md-6 mb-5" data-testid="planet-card-saturn">
+                    <div class="LS-card h-100 d-flex flex-column cursor-pointer">
+                        <div style="height: 250px; overflow: hidden;" class="position-relative border-bottom border-secondary">
+                            <img src="images/saturn.jpg"Saturn" class="w-100 h-100" style="object-fit: cover;" data-testid="planet-img-saturn">
+                            <div class="position-absolute top-3 end-3 bg-dark bg-opacity-70 px-3 py-1 rounded-pill border border-info">
+                                <span class="text-cyan text-uppercase fw-bold text-sm" data-testid="planet-type-saturn">Planet</span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow-1 d-flex flex-column">
+                            <h4 class="font-orbitron fs-4 text-white mb-2" data-testid="planet-name-saturn">Saturn</h4>
+                            <p class="text-gray-400 mb-4 flex-grow-1" data-testid="planet-desc-saturn">The sixth planet, known for its beautiful rings.</p>
+                            <button type="button" class="LS-btn-glow btn-sm w-100" data-bs-toggle="modal" data-bs-target="#planetModal" data-planet="saturn" data-testid="planet-btn-saturn">Access Data</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Uranus Card -->
+                <div class="col-lg-4 col-md-6 mb-5" data-testid="planet-card-uranus">
+                    <div class="LS-card h-100 d-flex flex-column cursor-pointer">
+                        <div style="height: 250px; overflow: hidden;" class="position-relative border-bottom border-secondary">
+                            <img src="images/uranus.jpg"Uranus" class="w-100 h-100" style="object-fit: cover;" data-testid="planet-img-uranus">
+                            <div class="position-absolute top-3 end-3 bg-dark bg-opacity-70 px-3 py-1 rounded-pill border border-info">
+                                <span class="text-cyan text-uppercase fw-bold text-sm" data-testid="planet-type-uranus">Planet</span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow-1 d-flex flex-column">
+                            <h4 class="font-orbitron fs-4 text-white mb-2" data-testid="planet-name-uranus">Uranus</h4>
+                            <p class="text-gray-400 mb-4 flex-grow-1" data-testid="planet-desc-uranus">The seventh planet from the Sun.</p>
+                            <button type="button" class="LS-btn-glow btn-sm w-100" data-bs-toggle="modal" data-bs-target="#planetModal" data-planet="uranus" data-testid="planet-btn-uranus">Access Data</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neptune Card -->
+                <div class="col-lg-4 col-md-6 mb-5" data-testid="planet-card-neptune">
+                    <div class="LS-card h-100 d-flex flex-column cursor-pointer">
+                        <div style="height: 250px; overflow: hidden;" class="position-relative border-bottom border-secondary">
+                            <img src="images/neptune.jpg" class="w-100 h-100" style="object-fit: cover;" data-testid="planet-img-neptune">
+                            <div class="position-absolute top-3 end-3 bg-dark bg-opacity-70 px-3 py-1 rounded-pill border border-info">
+                                <span class="text-cyan text-uppercase fw-bold text-sm" data-testid="planet-type-neptune">Planet</span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-grow-1 d-flex flex-column">
+                            <h4 class="font-orbitron fs-4 text-white mb-2" data-testid="planet-name-neptune">Neptune</h4>
+                            <p class="text-gray-400 mb-4 flex-grow-1" data-testid="planet-desc-neptune">The eighth and farthest planet from the Sun.</p>
+                            <button type="button" class="LS-btn-glow btn-sm w-100" data-bs-toggle="modal" data-bs-target="#planetModal" data-planet="neptune" data-testid="planet-btn-neptune">Access Data</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="planetModal" data-bs-backdrop="static" tabindex="-1" data-testid="modal-planet">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-secondary">
+                    <h1 class="modal-title font-orbitron text-white" id="planetTitle" data-testid="modal-title">Planet Name</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" data-testid="modal-close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img id="planetImage" src="" alt="Planet" class="w-100" style="height: 300px; object-fit: cover;" data-testid="modal-image">
+                    <div class="p-5">
+                        <p id="planetDescription" class="text-gray-300 fs-5 mb-4" data-testid="modal-description">Description</p>
+                        <table class="LS-table w-100 mb-0">
+                            <tbody>
+                                <tr>
+                                    <td class="text-cyan fw-bold">Distance from Sun</td>
+                                    <td class="text-right" id="planetDistance" data-testid="modal-distance">—</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-cyan fw-bold">Radius</td>
+                                    <td class="text-right" id="planetRadius" data-testid="modal-radius">—</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-cyan fw-bold">Avg Temperature</td>
+                                    <td class="text-right" id="planetTemp" data-testid="modal-temp">—</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-cyan fw-bold">Orbital Period</td>
+                                    <td class="text-right" id="planetOrbit" data-testid="modal-orbit">—</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="LS-footer text-white py-5" data-testid="footer-main">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4">
+                    <h3 class="LS-brand mb-3" data-testid="footer-brand">SOLAR<span class="text-white">SYSTEM</span></h3>
+                    <p class="text-muted" data-testid="footer-tagline">Exploring the cosmos, one planet at a time.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="font-orbitron mb-3" data-testid="footer-links">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-decoration-none text-muted text-opacity-75" data-testid="footer-link-about">About Us</a></li>
+                        <li><a href="terms.html" class="text-decoration-none text-muted text-opacity-75" data-testid="footer-link-terms">Terms & Policies</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-muted text-opacity-75" data-testid="footer-link-contact">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="font-orbitron mb-3" data-testid="footer-newsletter">Newsletter</h5>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control LS-input" placeholder="Enter email" data-testid="input-email-footer">
+                        <button class="btn btn-outline-info" type="button" data-testid="button-subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <p class="mb-0 text-muted" data-testid="footer-copyright">&copy; 2025 Solar System Explorer.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const planetData = {
+            sun: { name: 'The Sun', img: '../IMG/sun.jpg', desc: 'The star at the center of our Solar System.', distance: '0 km', radius: '696,340 km', temp: '5,500°C', orbit: 'N/A' },
+            mercury: { name: 'Mercury', img: '../IMG/mercury.jpg', desc: 'The smallest planet and closest to the Sun.', distance: '58 million km', radius: '2,439.7 km', temp: '167°C', orbit: '88 days' },
+            venus: { name: 'Venus', img: '../IMG/venus.jpg', desc: 'The hottest planet in the Solar System.', distance: '108 million km', radius: '6,051.8 km', temp: '464°C', orbit: '225 days' },
+            earth: { name: 'Earth', img: '../IMG/earth.jpg', desc: 'Our home planet, the third from the Sun.', distance: '149.6 million km', radius: '6,371 km', temp: '15°C', orbit: '365.25 days' },
+            mars: { name: 'Mars', img: '../IMG/mars.jpg', desc: 'The fourth planet known as the Red Planet.', distance: '227.9 million km', radius: '3,389.5 km', temp: '-65°C', orbit: '687 days' },
+            jupiter: { name: 'Jupiter', img: '../IMG/jupiter.jpg', desc: 'The largest planet in the Solar System.', distance: '778.5 million km', radius: '69,911 km', temp: '-110°C', orbit: '12 years' },
+            saturn: { name: 'Saturn', img: '../IMG/saturn.jpg', desc: 'The sixth planet, known for its beautiful rings.', distance: '1.4 billion km', radius: '58,232 km', temp: '-140°C', orbit: '29 years' },
+            uranus: { name: 'Uranus', img: '../IMG/uranus.jpg', desc: 'The seventh planet from the Sun.', distance: '2.8 billion km', radius: '25,362 km', temp: '-195°C', orbit: '84 years' },
+            neptune: { name: 'Neptune', img: '../IMG/neptune.jpg', desc: 'The eighth and farthest planet from the Sun.', distance: '4.5 billion km', radius: '24,622 km', temp: '-200°C', orbit: '165 years' }
+        };
+
+        const modal = document.getElementById('planetModal');
+        modal.addEventListener('show.bs.modal', function(e) {
+            const button = e.relatedTarget;
+            const planet = button.getAttribute('data-planet');
+            const data = planetData[planet];
+            
+            document.getElementById('planetTitle').textContent = data.name;
+            document.getElementById('planetImage').src = data.img;
+            document.getElementById('planetDescription').textContent = data.desc;
+            document.getElementById('planetDistance').textContent = data.distance;
+            document.getElementById('planetRadius').textContent = data.radius;
+            document.getElementById('planetTemp').textContent = data.temp;
+            document.getElementById('planetOrbit').textContent = data.orbit;
+        });
+    </script>
+    <script src="../JS/script.js"></script>
+    
+</body>
+</html>

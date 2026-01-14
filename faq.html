@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Solar System Explorer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <body id="LS">
+    <nav class="LS-navbar navbar navbar-expand-lg navbar-dark sticky-top" data-testid="navbar-main">
+        <div class="container-fluid">
+            <a class="navbar-brand LS-brand" href="../index.html" data-testid="brand-logo">SOLAR<span class="text-white">SYSTEM</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-testid="navbar-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link LS-nav-link" href="../index.html" data-testid="nav-home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link LS-nav-link" href="about.html" data-testid="nav-about">About</a></li>
+                    <li class="nav-item"><a class="nav-link LS-nav-link" href="services.html" data-testid="nav-services">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link LS-nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button"
+                         data-bs-toggle="dropdown" data-testid="nav-explore">Explore</a>
+<ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                            <li><a class="dropdown-item" href="gallery.html" data-testid="nav-gallery">Gallery</a></li>
+                            <li><a class="dropdown-item" href="blog.html" data-testid="nav-blog">News</a></li>
+                            <li><a class="dropdown-item" href="team.html" data-testid="nav-team">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link LS-nav-link active" href="faq.html" data-testid="nav-faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link LS-nav-link" href="contact.html" data-testid="nav-contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-20">
+        <div class="container" style="max-width: 42rem;">
+            <h1 class="LS-section-title text-center mx-auto mb-5 d-block display-4" data-testid="page-title">F.A.Q.</h1>
+            <p class="text-center text-gray-400 mb-5" data-testid="page-subtitle">Frequently Asked Questions about our Solar System and the project.</p>
+
+            <div class="accordion" id="faqAccordion" data-testid="faq-accordion">
+                <div class="accordion-item mb-3 border-0" data-testid="faq-item-1">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button LS-card" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1" data-testid="faq-btn-1">
+                            Is Pluto a planet?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body LS-card text-gray-300" data-testid="faq-text-1">
+                            As of 2006, the International Astronomical Union (IAU) reclassified Pluto as a "dwarf planet." It meets two of the three criteria for a planet: it orbits the Sun and has sufficient mass for a nearly round shape. However, it has not "cleared the neighborhood" around its orbit.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 border-0" data-testid="faq-item-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button LS-card collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2" data-testid="faq-btn-2">
+                            How old is the Solar System?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body LS-card text-gray-300" data-testid="faq-text-2">
+                            The Solar System is approximately 4.571 billion years old. This age is calculated by radiometric dating of meteorites.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 border-0" data-testid="faq-item-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button LS-card collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3" data-testid="faq-btn-3">
+                            What is the hottest planet?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body LS-card text-gray-300" data-testid="faq-text-3">
+                            Venus is the hottest planet in our solar system, with surface temperatures hot enough to melt lead (about 465°C / 870°F), due to its thick atmosphere which creates a runaway greenhouse effect.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 border-0" data-testid="faq-item-4">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button LS-card collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4" data-testid="faq-btn-4">
+                            Can we live on Mars?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body LS-card text-gray-300" data-testid="faq-text-4">
+                            Currently, Mars is hostile to life as we know it due to radiation, low pressure, and freezing temperatures. However, it is the most habitable candidate for future colonization, and many space agencies are working on technologies to make this possible.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-3 border-0" data-testid="faq-item-5">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button LS-card collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5" data-testid="faq-btn-5">
+                            How do I access high-res images?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body LS-card text-gray-300" data-testid="faq-text-5">
+                            Navigate to our "Gallery" page to view high-resolution images of all planets. You can also contact us for specific data requests via the Services page.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="LS-footer text-white py-5" data-testid="footer-main">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4">
+                    <h3 class="LS-brand mb-3" data-testid="footer-brand">SOLAR<span class="text-white">SYSTEM</span></h3>
+                    <p class="text-muted" data-testid="footer-tagline">Exploring the cosmos, one planet at a time.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="font-orbitron mb-3" data-testid="footer-links">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-decoration-none text-muted text-opacity-75" data-testid="footer-link-about">About Us</a></li>
+                        <li><a href="terms.html" class="text-decoration-none text-muted text-opacity-75" data-testid="footer-link-terms">Terms & Policies</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-muted text-opacity-75" data-testid="footer-link-contact">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="font-orbitron mb-3" data-testid="footer-newsletter">Newsletter</h5>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control LS-input" placeholder="Enter email" data-testid="input-email-footer">
+                        <button class="btn btn-outline-info" type="button" data-testid="button-subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <p class="mb-0 text-muted" data-testid="footer-copyright">&copy; 2025 Solar System Explorer.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
