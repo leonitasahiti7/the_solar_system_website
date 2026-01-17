@@ -9,6 +9,10 @@
     --LS-purple: #bc13fe;
 }
 
+.navbar-brand.LS-brand {
+    font-family: 'Audiowide', sans-serif;
+}
+
 /* Base Styles */
 * {
     margin: 0;
@@ -38,7 +42,7 @@ body#LS {
     padding: 1rem 0;
 }
 
-.LS-brand {
+.navbar-brand.LS-brand {
     font-family: 'Audiowide', sans-serif;
     font-weight: 700;
     color: var(--LS-neon-blue) !important;
@@ -141,6 +145,10 @@ p.lead {
   font-family: 'Audiowide', sans-serif;
   letter-spacing: 4px;
   text-transform: uppercase;
+}
+
+navbar-brand LS-brand {
+  font-family: 'Audiowide', sans-serif;
 }
 
 
@@ -441,3 +449,4 @@ p.lead {
     box-shadow: 0 0 50px rgba(0, 243, 255, 0.5);
     transform: scale(1.05);
 }
+
