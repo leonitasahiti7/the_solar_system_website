@@ -39,10 +39,10 @@ body#LS {
 }
 
 .LS-brand {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Audiowide', sans-serif;
     font-weight: 700;
     color: var(--LS-neon-blue) !important;
-    text-shadow: 0 0 10px rgba(218, 39, 200, 0.5);
+    text-shadow: 0 0 10px rgba(72, 36, 235, 0.5);
     font-size: 1.5rem;
     letter-spacing: 2px;
 }
@@ -112,12 +112,20 @@ body#LS {
     max-width: 42rem;
 }
 
+h1.LS-hero-title {
+    font-family: 'Exo 2', sans-serif;
+}
+
+p.lead {
+    font-family: 'outfit', sans-serif;
+}
+
 /* ========== BUTTONS ========== */
 .LS-btn-glow {
     background: transparent;
     border: 2px solid var(--LS-neon-blue);
     color: var(--LS-neon-blue);
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Murosia', sans-serif;
     text-transform: uppercase;
     padding: 12px 35px;
     border-radius: 30px;
@@ -128,6 +136,14 @@ body#LS {
     font-weight: 600;
     display: inline-block;
 }
+
+.LS-hero-title {
+  font-family: 'Audiowide', sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+
 
 .LS-btn-glow:hover {
     background: var(--LS-neon-purple);
@@ -165,7 +181,7 @@ body#LS {
 
 /* ========== SECTION TITLES ========== */
 .LS-section-title {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Murosia', sans-serif;
     border-bottom: 2px solid var(--LS-neon-blue);
     display: inline-block;
     padding-bottom: 10px;
