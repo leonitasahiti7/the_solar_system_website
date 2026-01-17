@@ -34,6 +34,7 @@ The goal of this project is to introduce the planets, moons, and other objects i
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+- **Bootstrap**
 - **GitHub Pages** (for hosting)
 
 ---
